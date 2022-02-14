@@ -32,7 +32,7 @@ body {
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: #d5dee2;
+    color: #3b033b;
     text-shadow: 1px 1px 2px rgba(80, 80, 80, 0.6);
 }
 
@@ -43,8 +43,8 @@ img {
     display: none;
     background-color: transparent;
     fill: currentColor;
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
 }
 
 .display-icon {
@@ -154,7 +154,7 @@ img {
     text-align: left;
     width: 345px;
     margin-bottom: 10px;
-    color: #d5dee2;
+    color: #3b033b;
 }
 
 .score-panel .stars {
@@ -389,7 +389,7 @@ footer p {
 
 @media only screen
   and (min-device-width: 375px)
-  and (max-device-width: 812px) {
+  and (max-device-width: 1000px) {
     h1 {
         font-size: 3.4em;
     }
@@ -432,7 +432,7 @@ footer p {
 
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 568px) {
+  and (max-device-width: 1000px) {
     h1 {
         font-size: 3.4em;
     }
