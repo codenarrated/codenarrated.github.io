@@ -389,7 +389,7 @@ footer p {
 
 @media only screen
   and (min-device-width: 375px)
-  and (max-device-width: 1000px) {
+  and (max-device-width: 812px) {
     h1 {
         font-size: 3.4em;
     }
@@ -406,7 +406,7 @@ footer p {
 
     .deck {
         width: 860px;
-        min-height: 880px;
+        min-height: 1200px;
     }
 
     .deck .card {
@@ -432,7 +432,7 @@ footer p {
 
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 1000px) {
+  and (max-device-width: 568px) {
     h1 {
         font-size: 3.4em;
     }
@@ -449,7 +449,7 @@ footer p {
 
     .deck {
         width: 860px;
-        min-height: 880px;
+        min-height: 1200px;
     }
 
     .deck .card {

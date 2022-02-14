@@ -20,7 +20,7 @@ for(let i = 1; i <= 24; i++) {
         svg = '<img role="img" class="icon" title="' + i + '" src="./img/'+ i +'.jpg">';
         li.innerHTML = svg;
     }
-    li.innerHTML = '<img role="img" class="icon" title="1" src="./img/1.jpg">';
+    // li.innerHTML = '<img role="img" class="icon" title="1" src="./img/1.jpg">';
     cardsList.push(li);
 }
 
