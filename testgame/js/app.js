@@ -7,6 +7,7 @@ const cardsList = [];
 
 // TODO: Use svg or png format to display icons according the file path
 const uri = document.baseURI;
+
 for(let i = 1; i <= 12; i++) {
     const li = document.createElement('li');
     let svg = '<img role="img" class="icon" title=' + i + ' src="./img/'+ i +'.jpg">';
