@@ -8,11 +8,19 @@ const cardsList = [];
 // TODO: Use svg or png format to display icons according the file path
 const uri = document.baseURI;
 
-for(let i = 1; i <= 12; i++) {
+for(let i = 1; i <= 24; i++) {
     const li = document.createElement('li');
-    let svg = '<img role="img" class="icon" title=' + i + ' src="./img/'+ i +'.jpg">';
+    let svg = '';
     li.className = 'card';
-    li.innerHTML = svg;
+    if (i > 12) {
+        let j = i - 12;
+        svg = '<img role="img" class="icon" title="' + j + '" src="./img/'+ j +'.jpg">';
+        li.innerHTML = svg;
+    } else {
+        svg = '<img role="img" class="icon" title="' + i + '" src="./img/'+ i +'.jpg">';
+        li.innerHTML = svg;
+    }
+    li.innerHTML = '<img role="img" class="icon" title="1" src="./img/1.jpg">';
     cardsList.push(li);
 }
 
@@ -46,7 +54,7 @@ deck.addEventListener('click', function(e) {
     let secondCounter = 0;
 
     // TODO: Stop timer
-    if (matchedCards.length === 16) {
+    if (matchedCards.length === 24) {
         timerOn = false;
         clearInterval(playerTime);
         return;
@@ -168,7 +176,7 @@ function finalScore() {
     closeModal.addEventListener('click', close);
 
     // TODO: Display modal
-    if (matchedCards.length === 16) {
+    if (matchedCards.length === 24) {
         modal.style.display = 'block';
         backdrop.style.display = 'block';
         score.textContent = minFinal.textContent + 'm ' + secFinal.textContent + 's';
