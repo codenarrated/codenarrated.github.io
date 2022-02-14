@@ -13,7 +13,7 @@ try {
 	if (uriContains.toLowerCase() !== 'file:///') throw false;
 }
 catch(err) {
-	if (err) {
+    if (err) {
         for(let i = 1; i <= 16; i++) {
             const li = document.createElement('li');
             let svg = '';
@@ -28,22 +28,16 @@ catch(err) {
             }
             cardsList.push(li);
         }
-	} else if (!err) {
+    } else if (!err) {
         for(let i = 1; i <= 16; i++) {
             const li = document.createElement('li');
             let svg = '';
             li.className = 'card';
-            if (i > 8) {
-                let j = i - 8;
-                svg = '<svg role="img" class="icon" title="0' + j + '"><use xlink:href="./img/sprites.svg#icon-' + j + '"></use></svg>';
-                li.innerHTML = svg;
-            } else {
-                svg = '<svg role="img" class="icon" title="0' + i + '"><use xlink:href="./img/sprites.svg#icon-' + i + '"></use></svg>';
-                li.innerHTML = svg;
-            }
+            svg = '<img role="img" class="icon" src=".img/' + i + '.jpg">';
+            li.innerHTML = svg;
             cardsList.push(li);
         }
-	}
+    }
 }
 
 const shuffledCards = shuffle(cardsList);
